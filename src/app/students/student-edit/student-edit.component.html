@@ -1,0 +1,6 @@
+<h5>{{'students.editTitle' | translate}}</h5>
+<div *ngFor="let student of students">
+  <div *ngIf="student.jmbag === jmbag">
+    <app-student-form [student]="student" [formType]="'EDIT'" *ngIf="student"></app-student-form>
+  </div>
+</div>
